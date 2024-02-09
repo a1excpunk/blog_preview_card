@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: hsl(0, 0%, 7%);
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+}
+body main {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .card_container {
+  pointer-events: none;
+  background-color: hsl(0, 0%, 100%);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 380px;
+  min-width: 250px;
+  border-radius: 15px;
+  border: 1px solid hsl(0, 0%, 7%);
+  box-shadow: 10px 10px hsl(0, 0%, 7%);
+  transition: box-shadow 300ms ease;
+}
+body main .card_container:hover {
+  box-shadow: 15px 15px hsl(0, 0%, 7%);
+}
+body main .card_container img {
+  border-radius: 15px;
+}
+body main .card_container .tag span {
+  background-color: hsl(47, 88%, 63%);
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 14px;
+}
+body main .card_container .publish_date {
+  font-size: 14px;
+}
+body main .card_container .card_name {
+  font-size: 1.4em;
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 300ms ease;
+  pointer-events: auto;
+}
+body main .card_container .card_name:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+body main .card_container .card_description {
+  color: hsl(0, 0%, 50%);
+}
+body main .card_container .publisher_info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body main .card_container .publisher_info img {
+  width: 35px;
+}
+body main .card_container .publisher_info .publisher_name {
+  font-weight: 800;
+}
+body footer {
+  text-align: center;
+  padding-bottom: 10px;
+}
+body footer a {
+  color: hsl(0, 0%, 50%);
+}/*# sourceMappingURL=style.css.map */
